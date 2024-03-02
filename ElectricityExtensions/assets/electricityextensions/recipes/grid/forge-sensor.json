@@ -14,7 +14,7 @@
   },
   "output": {
     "type": "block",
-    "code": "electricity:forge-sensor",
+    "code": "electricityextensions:forge-sensor",
     "quantity": 1
   }
 }

@@ -6,7 +6,7 @@
     "electricityextensions",
     Website = "https://github.com/GTextreme169/ElectricityExtensions",
     Description = "Adds Extra Electricity Components to Vintage Story.",
-    Version = "0.0.1",
+    Version = "0.0.2",
     Authors = new[] {
         "GTextreme169"
     }, 
