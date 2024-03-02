@@ -7,8 +7,7 @@ This mod is required on both client and server.
 **(Checkboxes mean that the feature is implemented)**
 - [x] **Smarter Electric Forge**: Adds a new Electric Forge that only uses electricity when it's actually smelting something. 
   - Called "Electric Forge (Sensor)"
-- [ ] **Electric Block**: Adds a block to pass wired electricity through walls. 
-  - This is a feature that I was able to apply to all metal blocks, but have not been successful in running it without modifying the base mod.)
+- [X] **Conductor Block**: This is a feature applies to all metal blocks, it allows them to conduct electricity.
 - [ ] **Electric Furnace**: Modified Fire pit that uses electricity instead of fuel. 
   - Called "Electric Furnace"
   - I have not finished the shape for this block yet.

@@ -1,4 +1,5 @@
-﻿using Vintagestory.API.Common;
+﻿using ElectricityExtensions.Content.Block;
+using Vintagestory.API.Common;
 
 [assembly: ModDependency("game", "1.18.4")]
 [assembly: ModInfo(
@@ -6,7 +7,7 @@
     "electricityextensions",
     Website = "https://github.com/GTextreme169/ElectricityExtensions",
     Description = "Adds Extra Electricity Components to Vintage Story.",
-    Version = "0.0.2",
+    Version = "0.0.3",
     Authors = new[] {
         "GTextreme169"
     }, 
@@ -19,6 +20,9 @@ namespace ElectricityExtensions {
         public override void Start(ICoreAPI api) {
             base.Start(api);
             api.RegisterBlockEntityBehaviorClass("AutoElectricForge", typeof(Content.Block.Entity.Behavior.AutoElectricForge));
+
+            api.RegisterBlockClass("Conductor", typeof(Conductor));
+            api.RegisterBlockEntityClass("Conductor", typeof(Content.Block.Entity.Conductor));
         }
 
     }
