@@ -1,0 +1,20 @@
+﻿{
+  "ingredientPattern": "GS",
+  "width": 2,
+  "height": 1,
+  "ingredients": {
+    "G": {
+      "type": "block",
+      "code": "electricity:forge"
+    },
+    "S": {
+      "type": "block",
+      "code": "electricity:switch-enabled"
+    }
+  },
+  "output": {
+    "type": "block",
+    "code": "electricity:forge-sensor",
+    "quantity": 1
+  }
+}

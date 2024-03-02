@@ -1,0 +1,14 @@
+{
+  "type": "code",
+  "modid": "electricityextensions",
+  "name": "Electricity Extensions",
+  "authors": [
+    "GTextreme169"
+  ],
+  "description": "Adds Extra Electricity Components to Vintage Story.",
+  "Version": "0.0.1",
+  "dependencies": {
+    "game": "1.18.4",
+    "electricity": "0.0.8"
+  }
+}

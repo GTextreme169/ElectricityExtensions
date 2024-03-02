@@ -1,0 +1,9 @@
+[bB]in/
+[oO]bj/
+
+.idea/
+.vs/
+
+*.DotSettings.User
+
+Electricity.dll
