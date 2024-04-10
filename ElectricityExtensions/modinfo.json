@@ -6,9 +6,9 @@
     "GTextreme169"
   ],
   "description": "Adds Extra Electricity Components to Vintage Story.",
-  "Version": "0.0.3",
+  "Version": "0.0.4",
   "dependencies": {
-    "game": "1.18.4",
-    "electricity": "0.0.8"
+    "game": "1.19.5",
+    "electricity": "0.0.11"
   }
 }

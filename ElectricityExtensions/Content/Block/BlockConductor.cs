@@ -6,7 +6,7 @@ using Vintagestory.API.MathTools;
 
 namespace ElectricityExtensions.Content.Block;
 
-public class Conductor : Vintagestory.API.Common.Block {
+public class BlockConductor : Vintagestory.API.Common.Block {
 
 
         public override void OnBlockBroken(IWorldAccessor world, BlockPos position, IPlayer byPlayer, float dropQuantityMultiplier = 1) {

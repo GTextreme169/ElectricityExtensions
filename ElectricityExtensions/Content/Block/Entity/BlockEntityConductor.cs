@@ -5,7 +5,7 @@ using Vintagestory.API.Common;
 namespace ElectricityExtensions.Content.Block.Entity;
 
 
-public class Conductor : Cable {
+public class BlockEntityConductor : Cable {
     
     // This is the same as the Electricity property in Cable.cs But has to be done due to private access modifier
     private Electricity.Content.Block.Entity.Behavior.Electricity Electricity

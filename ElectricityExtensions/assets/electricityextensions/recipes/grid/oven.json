@@ -1,0 +1,20 @@
+﻿{
+  "ingredientPattern": "_P_,PCP,_P_",
+  "width": 3,
+  "height": 3,
+  "ingredients": {
+    "P": {
+      "type": "item",
+      "code": "game:metalplate-iron"
+    },
+    "C": {
+      "type": "item",
+      "code": "game:metalplate-copper"
+    }
+  },
+  "output": {
+    "type": "block",
+    "code": "electricityextensions:oven-off",
+    "quantity": 1
+  }
+}

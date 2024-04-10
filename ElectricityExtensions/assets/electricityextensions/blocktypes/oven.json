@@ -1,0 +1,117 @@
+{
+  "code": "oven",
+  variantgroups: [
+    {
+      code: "burnstate",
+      states: [
+        "on",
+        "off"
+      ]
+    }
+  ],
+  attributes: {
+    handbook: {
+      include: true,
+      extraSections: [
+        {
+          title: "firepit-handbook-help-title",
+          text: "firepit-handbook-help-text"
+        }
+      ]
+    }
+  },
+  class: "Oven",
+  entityClass: "Oven",
+  entityBehaviors: [
+    {
+      "name": "Electricity"
+    },
+    {
+      "name": "Oven"
+    }
+  ],
+  behaviorsByType: {
+    "*": [
+      {
+        name: "Container"
+      },
+      {
+        name: "Unstable"
+      },
+      {
+        name: "HeatSource"
+      }
+    ]
+  },
+  renderpass: "OpaqueNoCull",
+  shape: {
+    base: "block/oven"
+  },
+  faceCullMode: "NeverCull",
+  textures: {
+    "iron": {
+      base: "block/iron",
+    },
+    "copper": {
+      base: "block/copper",
+    },
+  },
+  creativeinventory: {
+    general: [
+      "oven-off"
+    ],
+    decorative: [
+      "oven-off"
+    ]
+  },
+  blockmaterial: "Metal",
+  lightAbsorption: 0,
+  lightHsvByType: {
+    "oven-off": [
+      7,
+      7,
+      3
+    ],
+    "oven-on": [
+      7,
+      7,
+      16
+    ]
+  },
+  sidesolid: {
+    all: false
+  },
+  sideopaque: {
+    all: false
+  },
+  replaceable: 10,
+  resistanceByType: {
+    "*": 1.5
+  },
+  collisionbox: null,
+  selectionbox: {
+    x1: 0.125,
+    y1: 0,
+    z1: 0.125,
+    x2: 0.875,
+    y2: 0.75,
+    z2: 0.875
+  },
+  guiTransform: {
+    origin: {
+      x: 0.5,
+      y: 0.5,
+      z: 0.5
+    },
+    scale: 1
+  },
+  dropsByType: {
+    "*": []
+  },
+  materialDensity: 600,
+  sounds: {
+    "place": "block/metal",
+    "hit": "block/metal",
+    "break": "block/metal"
+  }
+}
