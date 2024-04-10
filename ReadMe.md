@@ -27,3 +27,4 @@ This mod is required on both client and server.
 | 0.0.2                  | > 0.0.8     | 0.18.4 to 0.19.4 |
 | 0.0.3                  | > 0.0.8     | 0.18.4 to 0.19.4 |
 | 0.0.4                  | > 0.0.11    | 0.19.5 or above  |
+| 0.0.5                  | > 0.0.11    | 0.19.5 or above  |

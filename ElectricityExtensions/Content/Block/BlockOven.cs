@@ -18,7 +18,7 @@ public class BlockOven : Vintagestory.API.Common.Block
   public override void OnLoaded(ICoreAPI api)
   {
     // Call the "open" animation on the model
-    shape = Vintagestory.API.Common.Shape.TryGet(api, "electricityextensions:shapes/block/oven.json");
+    shape = Vintagestory.API.Common.Shape.TryGet(api, "electricityextensions:shapes/block/electric-oven.json");
     animation = shape.Animations[0];
     //TODO: Find a way to Run the animation
     

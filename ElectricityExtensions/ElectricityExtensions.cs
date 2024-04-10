@@ -9,7 +9,7 @@ using Vintagestory.API.Common;
     "electricityextensions",
     Website = "https://github.com/GTextreme169/ElectricityExtensions",
     Description = "Adds Extra Electricity Components to Vintage Story.",
-    Version = "0.0.4",
+    Version = "0.0.5",
     Authors = new[] {
         "GTextreme169"
     }, 
@@ -30,9 +30,9 @@ namespace ElectricityExtensions {
             api.RegisterBlockEntityClass("Conductor", typeof(BlockEntityConductor));
             
             // Oven
-            api.RegisterBlockClass("Oven", typeof(BlockOven));
-            api.RegisterBlockEntityClass("Oven", typeof(BlockEntityOven));
-            api.RegisterBlockEntityBehaviorClass("Oven", typeof(EntityBehaviorOven));
+            api.RegisterBlockClass("ElectricOven", typeof(BlockOven));
+            api.RegisterBlockEntityClass("ElectricOven", typeof(BlockEntityOven));
+            api.RegisterBlockEntityBehaviorClass("ElectricOven", typeof(EntityBehaviorOven));
 
         }
 

@@ -1,5 +1,5 @@
 {
-  "code": "oven",
+  "code": "electric-oven",
   variantgroups: [
     {
       code: "burnstate",
@@ -20,14 +20,14 @@
       ]
     }
   },
-  class: "Oven",
-  entityClass: "Oven",
+  class: "ElectricOven",
+  entityClass: "ElectricOven",
   entityBehaviors: [
     {
       "name": "Electricity"
     },
     {
-      "name": "Oven"
+      "name": "ElectricOven"
     }
   ],
   behaviorsByType: {
@@ -45,23 +45,23 @@
   },
   renderpass: "OpaqueNoCull",
   shape: {
-    base: "block/oven"
+    base: "block/electric-oven"
   },
   faceCullMode: "NeverCull",
   textures: {
     "iron": {
-      base: "block/iron",
+      base: "block/iron"
     },
     "copper": {
-      base: "block/copper",
-    },
+      base: "block/copper"
+    }
   },
   creativeinventory: {
     general: [
-      "oven-off"
+      "electric-oven-off"
     ],
     decorative: [
-      "oven-off"
+      "electric-oven-off"
     ]
   },
   blockmaterial: "Metal",
