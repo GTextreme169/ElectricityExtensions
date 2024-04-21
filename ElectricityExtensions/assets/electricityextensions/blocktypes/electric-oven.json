@@ -105,9 +105,6 @@
     },
     scale: 1
   },
-  dropsByType: {
-    "*": []
-  },
   materialDensity: 600,
   sounds: {
     "place": "block/metal",
