@@ -14,7 +14,7 @@
   },
   "output": {
     "type": "block",
-    "code": "electricityextensions:electric-oven-off",
+    "code": "electricityextensions:electricoven-off-north",
     "quantity": 1
   }
 }

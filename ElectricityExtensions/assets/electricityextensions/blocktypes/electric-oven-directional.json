@@ -1,5 +1,5 @@
 {
-  "code": "electric-oven",
+  "code": "electricoven",
   variantgroups: [
     {
       code: "burnstate",
@@ -7,6 +7,10 @@
         "on",
         "off"
       ]
+    },
+    {
+      code: "side",
+      loadFromProperties: "abstract/horizontalorientation"
     }
   ],
   attributes: {
@@ -30,22 +34,21 @@
       "name": "ElectricOven"
     }
   ],
-  behaviorsByType: {
-    "*": [
-      {
-        name: "Container"
-      },
-      {
-        name: "Unstable"
-      },
-      {
-        name: "HeatSource"
-      }
-    ]
-  },
+  behaviors: [
+      { "name": "Container" },
+      { "name": "Unstable" },
+      { "name": "HeatSource" },
+      { "name": "HorizontalOrientable", properties: { drop: { type:"block", code: "electricoven-off-north" } }}
+  ],
   renderpass: "OpaqueNoCull",
   shape: {
-    base: "block/electric-oven"
+    "base": "block/electric-oven",
+    "rotateYByType": {
+      "*-north": 0,
+      "*-east": 270,
+      "*-south": 180,
+      "*-west": 90
+    }
   },
   faceCullMode: "NeverCull",
   textures: {
@@ -55,6 +58,14 @@
     "copper": {
       base: "block/copper"
     }
+  },
+  creativeinventory: {
+    general: [
+      "electricoven-off-north"
+    ],
+    decorative: [
+      "electricoven-off-north"
+    ]
   },
   blockmaterial: "Metal",
   lightAbsorption: 0,
@@ -87,7 +98,7 @@
     x2: 0.875,
     y2: 0.75,
     z2: 0.875
-  }, 
+  },
   selectionbox: {
     x1: 0.125,
     y1: 0,

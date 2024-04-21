@@ -1,5 +1,7 @@
 ﻿{
   "block-forge-sensor": "Electric Forge (Sensor)",
   "block-electric-oven-off": "Electric Oven (Off)",
-  "block-electric-oven-on": "Electric Oven (On)"
+  "block-electric-oven-on": "Electric Oven (On)",
+  "block-electricoven-off-*": "Electric Oven (Off)",
+  "block-electricoven-on-*": "Electric Oven (On)"
 }
