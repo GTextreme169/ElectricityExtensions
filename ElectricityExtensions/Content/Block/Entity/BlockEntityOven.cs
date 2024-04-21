@@ -163,6 +163,12 @@ public class BlockEntityOven : BlockEntityOpenableContainer, IHeatSource, IFireP
     if (this.CanSmeltInput() && (double)this.InputStackCookingTime > (double)this.MaxCookingTime())
     {
       this.SmeltItems();
+    }else if (MaxTemp < 20f)
+    { // Unable to Heat because Electricity is Off
+      if (InputStackTemp > 20f)
+      {
+        InputStackTemp -= dt;
+      }
     }
   }
 
