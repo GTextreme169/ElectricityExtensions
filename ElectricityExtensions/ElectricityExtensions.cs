@@ -9,7 +9,7 @@ using Vintagestory.API.Common;
     "electricityextensions",
     Website = "https://github.com/GTextreme169/ElectricityExtensions",
     Description = "Adds Extra Electricity Components to Vintage Story.",
-    Version = "0.0.5",
+    Version = "0.0.6",
     Authors = new[] {
         "GTextreme169"
     }, 
