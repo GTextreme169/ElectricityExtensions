@@ -10,10 +10,13 @@ public sealed class EntityBehaviorAutoElectricForge : BlockEntityBehavior, IElec
     private int maxTemp;
     private int powerSetting;
     private bool hasItems = false;
+    private int MaxTemp => ElectricityExtensions.Instance?.Settings.ElectricForgeMaxTemperature ?? 1100;
+    private int PowerConsumption => ElectricityExtensions.Instance?.Settings.ElectricForgeMaxPowerConsumption ?? 100;
+    private int MinPowerConsumption => ElectricityExtensions.Instance?.Settings.ElectricForgeMinPowerConsumption ?? 10;
 
     public EntityBehaviorAutoElectricForge(BlockEntity blockEntity) : base(blockEntity) { }
 
-    public ConsumptionRange ConsumptionRange => hasItems ? new ConsumptionRange(10, 100) : new ConsumptionRange(0, 0);
+    public ConsumptionRange ConsumptionRange => hasItems ? new ConsumptionRange(MinPowerConsumption, PowerConsumption) : new ConsumptionRange(0, 0);
 
     public void Consume(int amount)
     {
@@ -28,7 +31,7 @@ public sealed class EntityBehaviorAutoElectricForge : BlockEntityBehavior, IElec
         }
         if (this.powerSetting != amount) {
             this.powerSetting = amount;
-            this.maxTemp = (amount * 1100) / 100;
+            this.maxTemp = (amount * MaxTemp) / PowerConsumption;
 
             if (entity != null)
             {
@@ -42,7 +45,7 @@ public sealed class EntityBehaviorAutoElectricForge : BlockEntityBehavior, IElec
         base.GetBlockInfo(forPlayer, stringBuilder);
 
         stringBuilder.AppendLine(StringHelper.Progressbar(this.powerSetting));
-        stringBuilder.AppendLine("├ Consumption: " + this.powerSetting + "/" + 100 + "⚡   ");
+        stringBuilder.AppendLine("├ Consumption: " + this.powerSetting + "/" + PowerConsumption + "⚡   ");
         stringBuilder.AppendLine("└ Temperature: " + this.maxTemp + "° (max.)");
         stringBuilder.AppendLine();
     }
