@@ -11,6 +11,7 @@ This mod is required on both client and server.
 - [X] **Electric Oven**: Modified Fire pit that uses electricity instead of fuel. 
   - Called "Electric Oven"
   - I have not been able to get the animations to work yet.
+- [X] **Configurable Temperature and Power Consumption**: Allows you to configure the temperature and power consumption of all electric elements in this mod.
 - [ ] **Electric Farmland**: Similar to Farmland, but heats the soil to help with winter. 
   - Called "Electric Farmland"
   - This block is very buggy, and I have not been able to get it to work reliably yet.
@@ -28,3 +29,5 @@ This mod is required on both client and server.
 | 0.0.3                  | > 0.0.8     | 0.18.4 to 0.19.4 |
 | 0.0.4                  | > 0.0.11    | 0.19.5 or above  |
 | 0.0.5                  | > 0.0.11    | 0.19.5 or above  |
+| 0.0.6                  | > 0.0.11    | 0.19.5 or above  |
+| 0.0.7                  | > 0.0.11    | 0.19.5 or above  |
