@@ -6,7 +6,7 @@
         <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <VINTAGE_STORY>C:\Users\Gtext\AppData\Roaming\Vintagestory</VINTAGE_STORY>
+        <VINTAGE_STORY>C:\Users\Gtext\AppData\Roaming\Vintagestory\Versions\1.20</VINTAGE_STORY>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="Electricity">

@@ -3,13 +3,13 @@ using ElectricityExtensions.Content.Block.Entity;
 using ElectricityExtensions.Content.Block.Entity.Behavior;
 using Vintagestory.API.Common;
 
-[assembly: ModDependency("game", "1.19.5")]
+[assembly: ModDependency("game", "1.20.3")]
 [assembly: ModInfo(
     "Electricity Extensions",
     "electricityextensions",
     Website = "https://github.com/GTextreme169/ElectricityExtensions",
     Description = "Adds Extra Electricity Components to Vintage Story.",
-    Version = "0.0.7",
+    Version = "0.0.8",
     Authors = new[] {
         "GTextreme169"
     }, 
